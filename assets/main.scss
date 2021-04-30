@@ -1,0 +1,26 @@
+---
+---
+
+$baseurl: "{{site.baseurl}}";
+
+$large-screen: 768px;
+$medium-screen: 480px;
+
+// global colours
+$grey-text: #333333;
+$footer-bg: #4c4c4c;
+$menu-text: #818181;
+$light-grey: #dbdbdb;
+$button-colour: #888da7;
+$purple: RebeccaPurple;
+$contact-link: SlateGrey;
+
+
+@import "typography";
+@import "layout";
+@import "landing";
+@import "footer";
+@import "navigation";
+@import "components";
+@import "work";
+@import "blog";

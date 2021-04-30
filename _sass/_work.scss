@@ -1,0 +1,92 @@
+// collection styles
+#work-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 0 0 -2.5rem;
+  padding: 2rem 0 0 2rem;
+}
+
+.work-text {
+  border-top: none;
+  padding: 1rem;
+}
+
+#work-container .work-item-med {
+  min-height: 20rem;
+  min-width: 16rem;
+  margin: 0 0 2.5rem 0.75rem;
+  flex: 1;
+}
+
+#work-container .work-item-med {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  transition: 0.3s ease-in-out;
+}
+
+#work-container .work-item-med:hover {
+    box-shadow: 0px 0px 24px 8px rgba(0,0,0,0.38);
+}
+
+.img-container img {
+  margin: 0 auto;
+  display: block;
+  width: 50rem;
+  height: auto;
+  max-width: 100%;
+}
+
+.work-img {
+  border-radius: 0.3rem 0.3rem 0 0;
+  background-position: left center;
+  height: 10rem;
+  background-size: cover;
+}
+
+
+.img-container .aj-logo {
+  width: 100%;
+  background-color: $grey-text;
+}
+
+.img-container p:last-child {
+  padding-bottom: 5rem;
+}
+
+.winter-img {
+  flex-wrap: wrap;
+}
+
+
+@media only screen and (min-width: $large-screen) {
+  .work-text-container {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  #img-catalogue img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .pop-up {
+    max-width: 20rem;
+  }
+
+  .winter-img {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .winter-img img {
+    padding: 1rem;
+    background-color: #d3d3d3;
+  }
+
+}
+
+#img-catalogue img {
+  -webkit-box-shadow: 10px 10px 46px 4px rgba(0,0,0,0.5);
+  -moz-box-shadow: 10px 10px 46px 4px rgba(0,0,0,0.5);
+  box-shadow: 10px 10px 46px 4px rgba(0,0,0,0.5);
+}

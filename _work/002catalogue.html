@@ -1,0 +1,36 @@
+---
+layout: itemLayout
+title: Video Game Catalogue
+description: It was through Flask that I was first introduced to Python and Jinja2.
+thumbnail: catalogueMain.jpg
+---
+<p>
+  During my third year of university I created a catalogue of video games using Python. The project itself was pretty simple: create a catalogue of something I liked. However, instead of using a database we were encouraged to work with Python and the Flask framework.
+</p>
+<h2>Adding Content</h2>
+<p>
+  Working with JSON meant I was able to store information and populate that information on the relevant pages. Jinja2, a templating language for Python, builds up the pages populated by parsing JSON.
+  By giving each video game entry a unique ID I was able to generate a random game as an extra feature of my project.
+</p>
+<h2>Templating</h2>
+<p>
+  Due to the high number of pages in the application, I used bootstrap and Jinja2 to create templates for an efficient and consistent workflow. It saved an incredible amount of time not having to worry about editing each page individually. It also meant if I wanted to add another more entries in the future I could do so easily.
+</p>
+
+<div class="img-container flex-column" id="img-catalogue">
+  <p>
+      <img src="{{site.baseurl}}/assets/img/catalogue/catalogueIndex.jpg" alt="index page">
+  </p>
+  <p>
+    <img src="{{site.baseurl}}/assets/img/catalogueMain.jpg" alt="catalogue page">
+  </p>
+  <p>
+    <img src="{{site.baseurl}}/assets/img/catalogueMain.jpg" alt="catalogue page">
+  </p>
+  <p>
+    <img src="{{site.baseurl}}/assets/img/catalogue/dishonored2Page.jpg" alt="catalogue page">
+  </p>
+  <p>
+    <img src="{{site.baseurl}}/assets/img/catalogue/404.jpg" alt="catalogue page">
+  </p>
+</div>

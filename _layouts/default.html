@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/main.css">
+  </head>
+  <div class="side-nav-mob">
+    <nav id="menuNavigation" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="{{site.baseurl}}/index">Home</a>
+      <a href="{{site.baseurl}}/work">Work</a>
+      <a href="{{site.baseurl}}/blog">Blog</a>
+      <a href="{{site.baseurl}}/about">About</a>
+    </nav>
+    <span class="spanNavigation" onclick="openNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </span>
+</div>
+
+  <body>
+    <main>
+      <div id="page-wrapper" class="flex-row">
+        <div id="side-bar"></div>
+        <div class="body-padding body-flex">
+          <div class="nav-container">
+            <ul>
+              <li><a href="{{site.baseurl}}/index">Home</a></li>
+              <li><a href="{{site.baseurl}}/work">Work</a></li>
+              <li><a href="{{site.baseurl}}/blog">Blog</a></li>
+              <li><a href="{{site.baseurl}}/about">About</a></li>
+            </ul>
+          </div>
+          {%- if page.title -%}
+            <h1 id="page-title">{{ page.title }}</h1>
+          {%- endif -%}
+          {{ content }}
+        </div>
+      </div>
+    </main>
+    <footer class="bg-footer body-padding flex-row">
+      {% include footer.html %}
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+// global fonts
+h1, h2, h3, h4, h5, h6, .link-button, .link-button-ghost {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+// global font sizes
+p  {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: $grey-text;
+}
+
+// font colours
+h1, h2, h3, h4, h5, h6 {
+  color: $grey-text;
+}
+
+.content-container h1 {
+  font-size: 4rem;
+}
+
+@media only screen and (min-width: $large-screen) {
+  .content-text p {
+    font-size: 2rem;
+  }
+}
+
+// side-navigation text styling
+.sidenav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: $menu-text;
+}
+
+.sidenav a:hover {
+  color: $light-grey;
+}
+
+// navigation styles
+.nav-container li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $contact-link;
+  font-size: 1.25rem;
+  &:hover {
+    color: RebeccaPurple;
+  }
+}
+
+// index styles
+
+.text-update em {
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+// portfolio item text styles
+#work-container a {
+  text-decoration: none;
+}
+
+
+// about text styles
+.link a {
+  text-decoration: none;
+  color: $contact-link;
+  font-weight: bold;
+  font-size: 2rem;
+  &:hover {
+    color: RebeccaPurple;
+  }
+}
+
+// blog text styles
+.content-text, ul {
+  list-style-type: none;
+}
+
+
+// footer text styling
+footer {
+    p {
+        color: $light-grey;
+        font-size: 0.75rem;
+    }
+}

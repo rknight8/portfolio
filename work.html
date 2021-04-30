@@ -1,0 +1,24 @@
+---
+layout: default
+title: Work
+---
+<div id="work-container">
+
+<!-- Jekyll Collection -->
+  {%- for item in site.work-%}
+      <div class="work-item-med">
+        <a href="{{site.baseurl}}{{item.url}}">
+          <div class="work-img" style="background-image: url('{{site.baseurl}}/assets/img/{{item.thumbnail}}');"></div>
+          <div class="work-text">
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.description }}</p>
+          </div>
+        </a>
+      </div>
+
+  {%- endfor -%}
+
+</div>
+
+
+<!-- <a href="{{item.url}}">Read More</a> -->

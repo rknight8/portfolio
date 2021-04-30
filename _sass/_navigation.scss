@@ -1,0 +1,80 @@
+// Navigation menu
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $grey-text;
+  overflow-x: hidden;
+  padding-top: 15px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.spanNavigation {
+  display: block;
+  width: 2.5rem;
+  position: absolute;
+  right: 0;
+  padding: 0.75rem 0.75rem 0 0;
+  div {
+    width: 30px;
+    height: 4px;
+    background-color: $footer-bg;
+    margin: 6px 0;
+    }
+}
+
+.nav-container {
+  display: none;
+}
+
+
+
+// desktop Navigation
+@media only screen and (min-width: $large-screen) {
+     .side-nav-mob {
+       display: none;
+     }
+
+     .nav-container {
+       display: block;
+     }
+
+      .nav-container ul {
+        display: flex;
+        flex-flow: row wrap;
+        margin-right: 1rem;
+        justify-content: right;
+        list-style-type: none;
+        padding: 0;
+        }
+
+      .nav-container li a {
+        display: block; // Needed to push out the vertical padding
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+
+        &:hover {
+          color: RebeccaPurple;
+          font-weight: bold;
+          text-transform: uppercase
+        }
+    }
+}

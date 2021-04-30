@@ -1,0 +1,26 @@
+---
+layout: default
+title: Blog
+---
+<div id="blog-container">
+    <div class="blog-content flex-column link">
+      <ul>
+        {% for post in site.posts %}
+        <li>
+          <div class="link">
+            <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+          </div>
+          <span class="postDate">{{ post.date | date: "%d %b %y" }}</span>
+          <p>{{ post.description }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="text-update">
+        <p>
+          <em>
+            Update 18 November 2019 - Site is still under construction but take a look around the pages that are finished!
+          </em>
+        </p>
+      </div>
+    </div>
+  </div>
